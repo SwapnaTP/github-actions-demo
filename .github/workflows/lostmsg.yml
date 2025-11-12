@@ -10,8 +10,9 @@ jobs:
     steps:
       - name: checkoutprocess
         uses: actions/checkout@v4
+        
       - name: print the below messages
-         run:|
+        run: |
            echo "message1" 
            echo "message1"
            echo "three"
