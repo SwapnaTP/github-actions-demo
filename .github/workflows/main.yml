@@ -4,7 +4,7 @@ on:                                #start of if else condition
 jobs:                              #when conditions
  say-Hey:                          #internal tag
   runs-on: ubuntu-latest           #defining the machine
-  steps:                           #implimetation
+  steps:                         
       -name: Checkout repository       #checkout
        uses: actions/checkout@v4 
     
