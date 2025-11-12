@@ -1,0 +1,13 @@
+name : Hello Word workflow   #initilise the workflow
+on: #start of if else condition
+  push: #expcted activity 
+jobs: #when conditions
+ Hey: #internal tag
+  runs-on: ubuntu-latest #defining the machine
+  steps: #implimetation
+  -name: Checkout repository #checkout
+   uses: actions/checkout@v4 
+
+   -name: print Hello #iving the order
+   run: echo "Heelo Github" #following the order
+  
