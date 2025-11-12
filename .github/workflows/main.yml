@@ -1,21 +1,15 @@
-name: Hellp program
+name: Hello World workflow       # initialize the workflow
 
-on:
- push:
- 
-jobs:
-  say-hey:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout process
+on:                              # trigger events
+  push:                          # when code is pushed to any branch
+
+jobs:                            # define jobs
+  say-Hey:                       # internal job ID
+    runs-on: ubuntu-latest       # runner
+
+    steps:                       # steps to execute
+      - name: Checkout repository  # checkout
         uses: actions/checkout@v4
 
-      - name: print hello
-        run: echo"hello world"
-    
-
-  
-  
-
-
-
+      - name: Print Hello          # print message
+        run: echo "Hello GitHub"
