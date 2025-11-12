@@ -1,6 +1,22 @@
-- name: Print multiple messages
-  run: |
-    echo "Message "
-    echo "Message "
-    echo "Message "
+name: multiple message
 
+on:
+ push:
+
+jobs:
+  multiple-message-code:
+    runs-on: ubuntu-latest
+
+    steps:
+      -name: checkoutprocess
+       uses: actions/checkout@v4
+
+       -name: print the below messages
+        run: |
+         echo "message1" 
+         echo "message1"
+         echo "three"
+       
+          
+  
+  
