@@ -1,0 +1,5 @@
+- name: Print multiple messages
+  run: |
+    echo "Message 1"
+    echo "Message 2"
+    echo "Message 3"
